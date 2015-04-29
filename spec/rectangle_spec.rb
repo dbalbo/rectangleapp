@@ -8,9 +8,9 @@ describe(Rectangle) do
 			expect(test_rectangle.square?()).to(eq(false))
 		end
 
-		it('returns true if the length equals the width') do
-			test_rectangle = Rectangle.new(30, 30)
-			expect(test_rectangle.square?()).to(eq(true))
+	it('returns true if the length equals the width') do
+		test_rectangle = Rectangle.new(30, 30)
+		expect(test_rectangle.square?()).to(eq(true))
 		end
 	end	
 
@@ -27,4 +27,11 @@ describe(Rectangle) do
 	 	expect(new_rectangle.width()).to(eq(30))
    end
   end
+
+  describe('#area') do
+  	it('returns the area of a rectangle') do
+  		test_rectangle = Rectangle.new(15, 30)
+  		expect(test_rectangle.area()).to(eq(450))
+  		end	
+  	end
  end  
